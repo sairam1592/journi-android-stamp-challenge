@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="4dp"
+            android:fitsSystemWindows="true">
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="done"
+                android:textColor="#ffffff"
+                android:backgroundTint="#00a4aa"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+        <TextView
+                android:id="@+id/tv_destination_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="14dp"
+                android:text="Where are you going?"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_search_destination"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:hint="e.g. Paris / Canada / Tuscany"
+                android:imeOptions="actionDone"
+                android:inputType="textCapSentences"
+                android:textColorHint="#c0727272"
+                android:textSize="16dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_search_suggestion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+</LinearLayout>

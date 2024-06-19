@@ -1,5 +1,5 @@
 # Android Coding Challenge
-
+A Take home Android Assessment test for Journi, Austria
 The goal of this coding challenge is to make improvements to a small Android app as provided by the Journi Android Team.
 
 Challenges Tackled:
